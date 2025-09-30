@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flame/components.dart';
 
 import '../actors/water_enemy.dart';
@@ -20,6 +22,9 @@ final segments = [
   segment2,
   segment3,
   segment4,
+  segment5,
+  segment6,
+  segment7,
 ];
 
 final segment0 = [
@@ -115,4 +120,87 @@ final segment4 = [
   Block(Vector2(9, 0), GroundBlock),
   Block(Vector2(9, 1), WaterEnemy),
   Block(Vector2(9, 3), PlatformBlock),
+];
+
+final segment5 = [
+  Block(Vector2(0, 0), GroundBlock),
+  Block(Vector2(1, 0), GroundBlock),
+  Block(Vector2(2, 0), GroundBlock),
+  Block(Vector2(3, 0), GroundBlock),
+  Block(Vector2(4, 0), GroundBlock),
+  Block(Vector2(5, 0), GroundBlock),
+  Block(Vector2(6, 0), GroundBlock),
+  Block(Vector2(7, 0), GroundBlock),
+  Block(Vector2(8, 0), GroundBlock),
+  Block(Vector2(9, 0), GroundBlock),
+
+  Block(Vector2(2, 2), PlatformBlock),
+  Block(Vector2(3, 2), PlatformBlock),
+  Block(Vector2(4, 2), PlatformBlock),
+  Block(Vector2(4, 3), PlatformBlock),
+  Block(Vector2(4, 4), PlatformBlock),
+
+  Block(Vector2(6, 4), PlatformBlock),
+  Block(Vector2(7, 4), PlatformBlock),
+  Block(Vector2(8, 4), PlatformBlock),
+  Block(Vector2(9, 4), PlatformBlock),
+
+  Block(Vector2(3, 4), Star),
+  Block(Vector2(7, 6), Star),
+
+  Block(Vector2(5, 1), WaterEnemy),
+];
+
+final segment6 = [
+  Block(Vector2(0, 0), GroundBlock),
+  Block(Vector2(1, 0), GroundBlock),
+  Block(Vector2(2, 0), GroundBlock),
+  Block(Vector2(3, 0), GroundBlock),
+  Block(Vector2(4, 0), GroundBlock),
+  Block(Vector2(5, 0), GroundBlock),
+  Block(Vector2(6, 0), GroundBlock),
+  Block(Vector2(7, 0), GroundBlock),
+  Block(Vector2(8, 0), GroundBlock),
+  Block(Vector2(9, 0), GroundBlock),
+
+  Block(Vector2(0, 6), PlatformBlock),
+  Block(Vector2(1, 6), PlatformBlock),
+  Block(Vector2(2, 6), PlatformBlock),
+
+  Block(Vector2(3, 4), PlatformBlock),
+  Block(Vector2(4, 4), PlatformBlock),
+
+  Block(Vector2(6, 2), PlatformBlock),
+  Block(Vector2(7, 2), PlatformBlock),
+  Block(Vector2(8, 2), PlatformBlock),
+
+  Block(Vector2(1, 8), Star),
+  Block(Vector2(7, 4), Star),
+
+  Block(Vector2(5, 1), WaterEnemy),
+];
+
+final segment7 = [
+  Block(Vector2(0, 0), GroundBlock),
+  Block(Vector2(1, 0), GroundBlock),
+  Block(Vector2(2, 0), GroundBlock),
+  Block(Vector2(5, 0), GroundBlock),
+  Block(Vector2(6, 0), GroundBlock),
+  Block(Vector2(9, 0), GroundBlock),
+
+  Block(Vector2(0, 6), PlatformBlock),
+  Block(Vector2(1, 6), PlatformBlock),
+  Block(Vector2(2, 6), PlatformBlock),
+
+  Block(Vector2(3, 4), PlatformBlock),
+  Block(Vector2(4, 4), PlatformBlock),
+
+  Block(Vector2(6, 2), PlatformBlock),
+  Block(Vector2(7, 2), PlatformBlock),
+  Block(Vector2(8, 2), PlatformBlock),
+
+  Block(Vector2(1, 8), Star),
+  Block(Vector2(7, 4), Star),
+
+  Block(Vector2(1, 1), WaterEnemy),
 ];
